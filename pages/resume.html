@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("../header.html");
+        $("#about").load("../index.html");
+        $("#footer").load("../footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <!-- Resume Section -->
+    <section id="resume">
+      <div id="left-column">
+        <h2>CERTIFICATES</h2>
+        <img
+          class="image"
+          src="../assets/JF Tech Prep Cert.jpg"
+          alt="Jeneel Farrell's Tech Prep Certificate"
+          style="width: 100%; max-width: 300px"
+        />
+        <img
+          src="../assets/JF Android Cert.jpg"
+          alt="Jeneel Farrell's Android Certificate"
+          style="width: 100%; max-width: 300px"
+        />
+        <img
+          src="../assets/GA UX Design Cert.jpg"
+          alt="Jeneel Farrell's Red Cross Certificate"
+          style="width: 100%; max-width: 300px"
+        />
+        <img
+          src="../assets/Red Cross Cert.jpg"
+          alt="Jeneel Farrell's Red Cross Certificate"
+          style="width: 100%; max-width: 300px"
+        />
+      </div>
+      <div id="resume-preview">
+        <h2>RESUME</h2>
+        <img
+          src="../assets/Jeneel Farrell Resume October 2024.png"
+          alt="Jeneel Farrell's Resume"
+          style="width: 100%; max-width: 800px"
+        />
+      </div>
+      <div id="footer"></div>
+  </body>
+</html>

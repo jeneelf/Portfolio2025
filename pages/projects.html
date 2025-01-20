@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../scripts/filter.js" defer></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("../header.html");
+        $("#about").load("../index.html");
+        $("#footer").load("../footer.html");
+      });
+    </script>
+  </head>
+  <body style="margin-top: 100px">
+    <div id="header"></div>
+    <!-- Filter Section -->
+    <div id="filter">
+      <label for="filter-tech">Filter by Technology:</label>
+      <select id="filter-tech">
+        <option value="all">All</option>
+        <option value="python">Python</option>
+        <option value="kotlin">Kotlin</option>
+        <option value="html-css">HTML/CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="javascript">UX/UI Design</option>
+      </select>
+    </div>
+
+    <!-- Projects Table -->
+    <table id="projects-table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Project Type</th>
+          <th>What's Inside?</th>
+          <th>See it in Action</th>
+        </tr>
+        <!--Project 5 -->
+        <tr data-tech="html-css">
+          <td>
+            <img
+              src="../assets/Jeneel Farrell (1).png"
+              alt="Portfolio Website"
+              width="100"
+            />
+            <p>Portfolio Website</p>
+          </td>
+          <td>Web Development</td>
+          <td>
+            <a
+              href="https://jeneelfarrell.wixsite.com/jeneelf-portfolio/good-chef"
+              target="_blank"
+              class="github-btn"
+              >View on GitHub</a
+            >
+          </td>
+          <td></td>
+        </tr>
+
+        <!-- Project 1 -->
+        <tr data-tech="UX/UI">
+          <td>
+            <img
+              src="../assets/Planiit_coverart.png"
+              alt="Planiit Cover Art"
+              width="100"
+            />
+            <p>Plannit UI Design</p>
+          </td>
+          <td>UX/UI Design</td>
+          <td>
+            <a
+              href="https://jeneelfarrell.wixsite.com/jeneelf-portfolio/planiit"
+              target="_blank"
+              class="github-btn"
+              >View Project</a
+            >
+          </td>
+          <td><p style="color: gray">Preview Coming Soon...</p></td>
+        </tr>
+        <!--Project 2 -->
+        <tr data-tech="kotlin">
+          <td>
+            <img
+              src="../assets/TravelComp_coverart.png"
+              alt="Project 2"
+              width="100"
+            />
+            <p>Planiit Kotlin App</p>
+          </td>
+          <td>Kotlin</td>
+          <td>
+            <a
+              href="https://github.com/jeneelf/TravelCompanion"
+              target="_blank"
+              class="github-btn"
+              >View on GitHub</a
+            >
+          </td>
+          <td>
+            <a
+              href="https://youtu.be/ByA0oAhLnwA?si=kjavEHBxS_JKJAPg"
+              target="_blank"
+              >Watch Video</a
+            >
+          </td>
+        </tr>
+        <!--Project 3 -->
+        <tr data-tech="python">
+          <td>
+            <img
+              src="../assets/Boggle_coverart.png"
+              alt="Project 3 Boggle"
+              width="100"
+            />
+            <p>Boggle Game</p>
+          </td>
+          <td>Python</td>
+          <td>
+            <a
+              href="https://github.com/jeneelf/CSCI375_Boggle"
+              target="_blank"
+              class="github-btn"
+              >View on GitHub</a
+            >
+          </td>
+          <td></td>
+        </tr>
+        <!--Project 4 -->
+        <tr data-tech="python">
+          <td>
+            <img
+              src="../assets/GoodChef_coverart.png"
+              alt="Project 4 Good Chef"
+              width="100"
+            />
+            <p>Good Chef UX/UI Design</p>
+          </td>
+          <td>UX/UI Design</td>
+          <td>
+            <a
+              href="https://jeneelfarrell.wixsite.com/jeneelf-portfolio/good-chef"
+              target="_blank"
+              class="github-btn"
+              >View Project</a
+            >
+          </td>
+          <td></td>
+        </tr>
+        <!--Project 5-->
+        <tr data-tech="kotlin">
+          <td>
+            <img
+              src="../assets/Kotlin_coverart.png"
+              alt="Project"
+              width="100"
+            />
+            <p>Kotlin Projects</p>
+          </td>
+          <td>Kotlin</td>
+          <td>
+            <a
+              href="https://github.com/jeneelf/Kotlin-Projects"
+              target="_blank"
+              class="github-btn"
+              >View on GitHub</a
+            >
+          </td>
+          <td><p style="color: gray">More Coming Soon...</p></td>
+        </tr>
+      </thead>
+    </table>
+    <div id="footer"></div>
+  </body>
+</html>
